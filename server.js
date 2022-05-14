@@ -3,6 +3,7 @@ const app = express()
 const port = 3000
 const mongoose = require('mongoose');
 
+
 var isWeekend = require('is-weekend')();
 
 console.log(isWeekend); // True or False;
