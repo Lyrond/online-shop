@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const mongoose = require('mongoose');
 
 var isWeekend = require('is-weekend')();
+const mongoose = require('mongoose');
 
 console.log(isWeekend); // True or False;
 app.use(express.static(__dirname + '/image'));
