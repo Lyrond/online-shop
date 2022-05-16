@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 let port = process.env.PORT || 3000;
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 
 // var isWeekend = require('is-weekend')();
@@ -33,7 +33,7 @@ app.get('/amd', ((req, res) => {
 
 async function start(){
     try{
-        await mongoose.connect('mongodb+srv://aliakbar:Buzukbuzuk2003@cluster0.m9pvz.mongodb.net/?retryWrites=true&w=majority')
+        // await mongoose.connect('mongodb+srv://aliakbar:Buzukbuzuk2003@cluster0.m9pvz.mongodb.net/?retryWrites=true&w=majority')
         app.listen(port, () => {
             console.log(`App listening at http://localhost:${port}`)
         })
