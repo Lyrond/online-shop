@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 let port = process.env.PORT || 3000;
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 
 // var isWeekend = require('is-weekend')();
@@ -41,6 +41,12 @@ async function start(){
         console.log(e)
     }
 };
+
+mongoose
+    .connect("mongodb+srv://aliakbar:Buzukbuzuk2003@cluster0.m9pvz.mongodb.net/?retryWrites=true&w=majority")
+    .then(()=> console.log("DB connected"))
+    .catch(e => console.log(e))
+
 
 start();
 
