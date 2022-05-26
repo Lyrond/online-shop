@@ -2,7 +2,7 @@ alert("hrllo");
 
 const filterbox = document.querySelectorAll('.box');
 
-document.getElementsByClassName('naver').addEventListener('click', event => {
+document.getElementsByClassName('nav').addEventListener('click', event => {
     if (event.target.tagName !== 'LI') return false;
 
     let filterClass = event.target.dataset['f'];

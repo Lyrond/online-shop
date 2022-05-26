@@ -1,6 +1,6 @@
-.container ul li {
+nav ul li {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 10px 40px 10px 0;
     cursor: pointer;
 }
@@ -66,8 +66,7 @@
     margin: 0 auto;
     margin-top: 10px;
     height: 150px;
-    width: 94%;
-    margin-left: 17px;
+    width: 90%;
     object-fit: cover;
     border-radius: 7px;
 }

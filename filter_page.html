@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -38,6 +38,154 @@
 </head>
 
 <body>
+
+    <header class='menu shadow'>
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+                <a class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" href="/">
+                    TechShop
+                </a>
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/" class="nav-link px-2 link-dark" id="el1">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark" id="el2">City</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark" id="el4">Categories</a></li>
+                </ul>
+
+                <div class="col-md-3 text-end">
+                    <a href="#" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="#" class="btn btn-primary">Sign-up</a>
+                </div>
+            </header>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li data-f="all">All</li>
+                <li data-f="video_card" class="text-cards">Video Cards</li>
+                <li data-f="motherboard" class="text-museum">Motherboard</li>
+                <li data-f="cpu" class="text-parks">CPU</li>
+                <li data-f="ssd" class="text-shops">SSD</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="block-cover">
+        <a href="#" class=" box video_card">
+            <div class="product">
+                <div class="image">
+                    <img src="3090.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>RTX 3090</h3>
+                    <div class="info-price">
+                        <span class="price">video card</span>
+                        <span class="city">5000KZT</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class=" box motherboard">
+            <div class="product">
+                <div class="image">
+                    <img src="board.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>MOTHERBOARD</h3>
+                    <div class="info-price">
+                        <span class="price">motherboard</span>
+                        <span class="city">5000KZT</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class=" box cpu">
+            <div class="product">
+                <div class="image">
+                    <img src="cpu.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>CPU</h3>
+                    <div class="info-price">
+                        <span class="price">cpu</span>
+                        <span class="city">5000KZT</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class=" box ssd">
+            <div class="product">
+                <div class="image">
+                    <img src="ssd.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>SSD</h3>
+                    <div class="info-price">
+                        <span class="price">ssd</span>
+                        <span class="city">5000KZT</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class=" box video_card">
+            <div class="product">
+                <div class="image">
+                    <img src="#" alt="">
+                </div>
+                <div class="info">
+                    <h3>VIDEO CARD</h3>
+                    <div class="info-price">
+                        <span class="price">video card</span>
+                        <span class="city">5000KZT</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class=" box motherboard">
+            <div class="product">
+                <div class="image">
+                    <img src="#" alt="">
+                </div>
+                <div class="info">
+                    <h3>MOTHERBOARD</h3>
+                    <div class="info-price">
+                        <span class="price">motherboard</span>
+                        <span class="city">5000KZT</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class=" box cpu">
+            <div class="product">
+                <div class="image">
+                    <img src="#" alt="">
+                </div>
+                <div class="info">
+                    <h3>CPU</h3>
+                    <div class="info-price">
+                        <span class="price">cpu</span>
+                        <span class="city">5000KZT</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class=" box ssd">
+            <div class="product">
+                <div class="image">
+                    <img src="#" alt="">
+                </div>
+                <div class="info">
+                    <h3>SSD</h3>
+                    <div class="info-price">
+                        <span class="price">ssd</span>
+                        <span class="city">5000KZT</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
     <script>
         const filterbox = document.querySelectorAll('.box');
 
@@ -54,174 +202,6 @@
             });
         });
     </script>
-
-    <header>
-        <nav class="navbar navbar-light bg-light navbar-expand-sm">
-            <a class="navbar-brand" href="#">
-        TechShop
-    </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-8" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbar-list-8">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">City</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="/filter">Categories</a>
-                </ul>
-
-                <div class="right-side d-flex">
-                    <form class="form-inline">
-                        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-info" type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
-                            </a>
-                            <div style="margin-left: -25px" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Dashboard</a>
-                                <a class="dropdown-item" href="#">Edit Profile</a>
-                                <a class="dropdown-item" href="#">Log Out</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <nav>
-            <ul>
-                <li data-f="all">All</li>
-                <li data-f="video_card" class="text-cards">Video Cards</li>
-                <li data-f="motherboard" class="text-museum">Motherboard</li>
-                <li data-f="cpu" class="text-parks">CPU</li>
-                <li data-f="ssd" class="text-shops">SSD</li>
-            </ul>
-        </nav>
-    </div>
-    <div class="block-cover">
-        <a href="#" class=" box video_card">
-            <div class="product">
-                <div class="image">
-                    <img src="#" alt="">
-                </div>
-                <div class="info">
-                    <h3>VIDEO CARD</h3>
-                    <div class="info-price">
-                        <span class="price">video card</span>
-                        <span class="city">5000KZT</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#" class=" box motherboard">
-            <div class="product">
-                <div class="image">
-                    <img src="#" alt="">
-                </div>
-                <div class="info">
-                    <h3>MOTHERBOARD</h3>
-                    <div class="info-price">
-                        <span class="price">motherboard</span>
-                        <span class="city">5000KZT</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#" class=" box cpu">
-            <div class="product">
-                <div class="image">
-                    <img src="#" alt="">
-                </div>
-                <div class="info">
-                    <h3>CPU</h3>
-                    <div class="info-price">
-                        <span class="price">cpu</span>
-                        <span class="city">5000KZT</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#" class=" box ssd">
-            <div class="product">
-                <div class="image">
-                    <img src="#" alt="">
-                </div>
-                <div class="info">
-                    <h3>SSD</h3>
-                    <div class="info-price">
-                        <span class="price">ssd</span>
-                        <span class="city">5000KZT</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#" class=" box video_card">
-            <div class="product">
-                <div class="image">
-                    <img src="#" alt="">
-                </div>
-                <div class="info">
-                    <h3>VIDEO CARD</h3>
-                    <div class="info-price">
-                        <span class="price">video card</span>
-                        <span class="city">5000KZT</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#" class=" box motherboard">
-            <div class="product">
-                <div class="image">
-                    <img src="#" alt="">
-                </div>
-                <div class="info">
-                    <h3>MOTHERBOARD</h3>
-                    <div class="info-price">
-                        <span class="price">motherboard</span>
-                        <span class="city">5000KZT</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#" class=" box cpu">
-            <div class="product">
-                <div class="image">
-                    <img src="#" alt="">
-                </div>
-                <div class="info">
-                    <h3>CPU</h3>
-                    <div class="info-price">
-                        <span class="price">cpu</span>
-                        <span class="city">5000KZT</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#" class=" box ssd">
-            <div class="product">
-                <div class="image">
-                    <img src="#" alt="">
-                </div>
-                <div class="info">
-                    <h3>SSD</h3>
-                    <div class="info-price">
-                        <span class="price">ssd</span>
-                        <span class="city">5000KZT</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </div>
 
 </body>
 

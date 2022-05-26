@@ -1,22 +1,34 @@
 {
-  "name": "untitled1",
-  "version": "1.0.0",
-  "description": "",
-  "engines": {
-    "node": "16.14.2",
-    "npm": "8.5.0"
-  },
-
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.3",
-    "is-weekend": "^1.0.0",
-    "mongoose": "^6.3.3"
-  }
+    "name": "untitled1",
+    "version": "1.0.0",
+    "description": "",
+    "engines": {
+        "node": "16.14.2",
+        "npm": "8.5.0"
+    },
+    "scripts": {
+        "start": "node server",
+        "server": "nodemon server",
+        "client-install": "npm install --prefix client",
+        "client": "npm run start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\" "
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.3",
+        "is-weekend": "^1.0.0",
+        "jsonwebtoken": "^8.5.1",
+        "materialize-css": "^1.0.0-rc.2",
+        "mongoose": "^6.3.4",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "concurrently": "^7.2.1",
+        "nodemon": "^2.0.16"
+    }
 }
