@@ -1,0 +1,75 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WEB Technologies 2 [Back End]",
+    "version": "v1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    },
+    {
+      "url": "https://powerful-depths-71138.herokuapp.com"
+    }
+  ],
+  "tags": [
+    {
+      "name": "User API",
+      "description": "Working with user"
+    }
+  ],
+  "paths": {
+
+    "/getusers": {
+      "post": {
+        "summary": "Get information about all users in the database",
+        "tags": [
+          "USER API functions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "document": {
+                "schema": {
+                  "type": "string",
+                  "example": [
+                    {
+                      "_id": "628c342d3e62c16c6454391e",
+                      "email": "abc@gmail.com",
+                      "password": "$2a$10$d/jOAR826GQNA7pCMbNCQ.v3ffBewQTLmfNRj3Q.9DjCegl0btzWe",
+                      "__v": 0
+                    },
+                    {
+                      "_id": "628c342d3e62c16c6434391e",
+                      "email": "hacker777@gmail.com",
+                      "password": "$2b$10GRGF3FDWDGFGDFDSFSDGFDGFDGDFSDFDSFGWwSU77PpEKS61jwr6hXXqK",
+                      "__v": 0
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "required": true
+          },
+          "password": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}

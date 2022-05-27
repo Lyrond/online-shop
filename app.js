@@ -1,6 +1,7 @@
 const express = require('express')
 const swaggerJsDoc = require('swagger-jsdoc')
 const swaggerUI = require('swagger-ui-express')
+const swaggerDoc = require('./openapi.json')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
@@ -19,6 +20,8 @@ app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
+app.use(express.json())
+app.use('/swagger', swaggerUI.serve, swaggerUI.setup(swaggerDoc))
 
 
 async function start() {
@@ -40,6 +43,16 @@ mongoose
 
 
 start();
+
+
+app.post('/getusers', async (req, res) => {
+    try {
+        const users = await User.find()
+        res.status(200).json(users)
+    } catch (e) {
+        console.log(e)
+    }
+})
 
 
 
