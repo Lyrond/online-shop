@@ -8,6 +8,7 @@ const morgan = require('morgan')
 const jwt = require('jsonwebtoken')
 const bcrypt = require("bcryptjs")
 const User = require("./models/User")
+const ProductName = require("./models/prod")
 const mongoose = require("mongoose");
 let port = process.env.PORT || 3000;
 const app = express()
@@ -156,5 +157,5 @@ app.get('/amd', ((req, res) => {
     res.sendFile(__dirname + '/amd.html')
 }));
 
-
 module.exports = app
+
