@@ -190,8 +190,13 @@ ul.hr li {
     border: 1px solid #000;
     padding: 3px;
     border: white;
+    border: white;
 }
 
 .carousel-item {
     transition: transform 2s ease, opacity .5s ease-out;
+}
+
+.box{
+    text-decoration: none;
 }

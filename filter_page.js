@@ -1,4 +1,4 @@
-alert("hrllo");
+alert("hello");
 
 const filterbox = document.querySelectorAll('.box');
 

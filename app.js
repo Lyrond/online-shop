@@ -11,7 +11,7 @@ const User = require("./models/User")
 const mongoose = require("mongoose");
 let port = process.env.PORT || 3000;
 const app = express()
-
+app.set('view engine', 'ejs');
 
 const JWT_SECRET = 'sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhfjk'
 
@@ -127,7 +127,7 @@ app.post('/api/login', async (req, res) => {
 app.use(express.static(__dirname + '/image'));
 app.use(express.static(__dirname + '/css'));
 app.get('/', ((req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    res.render('main')
 }));
 
 app.get('/intel', ((req, res) => {

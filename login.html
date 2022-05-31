@@ -92,6 +92,7 @@
                                                 console.log('Got the token: ', result.data)
                                                 localStorage.setItem('token', result.data)
                                                 alert('You are log in')
+                                                window.location.href = '/'
                                             } else {
                                                 alert(result.error)
                                             }

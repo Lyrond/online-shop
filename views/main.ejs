@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <%- include( 'head' )%>
+    <script>
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=Nur-Sultan&appid=f90a2cfbeaa2df6fd1ab7c0f914c0171')
+            .then(function(resp) {
+                return resp.json()
+            })
+            .then(function(data) {
+                document.querySelector('.city').innerHTML = data.name;
+                document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
+                document.querySelector('.feels').innerHTML = Math.round(data.main.feels_like - 273) + '&deg;';
+                document.querySelector('.weather').innerHTML = data.weather[0]['description'];
+            })
+    </script>
+    <title>Hello everyone!</title>
+
+</head>
+
+<body>
+<%- include( 'header' )%>
+
+<section class="vh-50">
+    <div class="container py-5 h-50" style="width: 200pt; margin-left: -5pt; margin-bottom: -220pt">
+        <div class="card shadow-0 border">
+            <div class="card-body p-12">
+
+                <h4 class="city">New York, US</h4>
+                Current temperature:
+                <p class="temp">5.42°C</p>
+                Feels like:
+                <p class="feels"> </p>
+                Weather:
+                <p class="weather">Scattered Clouds</p>
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+</section>
+<div class="w3-container w3-white" style="margin-top: 25px; margin-bottom: 20px;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="width: 700px; margin-left: 360px">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="nvidia"><img src="3090.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bestsellers</h5>
+                    <p>Nvidia Graphics Cards</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="intel"><img src="intel.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bestsellers</h5>
+                    <p>Intel Processors</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="amd"><img src="amd.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bestsellers</h5>
+                    <p>AMD processors</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="amdrad.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bestsellers</h5>
+                    <p>AMD Graphics Cards</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Choose the city</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="hr">
+                    <li><a style="text-decoration: none; color: black" href="#">Nur-Sultan</a></li>
+                    <li><a style="text-decoration: none; color: black" href="#">Almaty</a></li>
+                    <li><a style="text-decoration: none; color: black" href="#">Shymkent</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<%- include('footer' ) %>
+</body>
+
+</html>
