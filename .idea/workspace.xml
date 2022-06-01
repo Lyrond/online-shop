@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42db5dc1-4a9b-4f79-bfed-4abff0240440" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/models/prod.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/intel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nvidia.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/filter_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/main.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/main.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +67,7 @@
       <workItem from="1653923848057" duration="150000" />
       <workItem from="1653924011361" duration="1881000" />
       <workItem from="1653982945510" duration="4750000" />
-      <workItem from="1654001399912" duration="19751000" />
+      <workItem from="1654001399912" duration="22988000" />
     </task>
     <servers />
   </component>
