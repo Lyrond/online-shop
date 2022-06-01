@@ -132,7 +132,7 @@ app.get('/', ((req, res) => {
 }));
 
 app.get('/filter', ((req, res) => {
-    res.sendFile(__dirname + '/filter_page.html')
+    res.render('filter')
 }));
 
 app.get('/sign', ((req, res) => {
@@ -146,6 +146,7 @@ app.get('/login', ((req, res) => {
 app.get('/contacts', ((req, res) => {
     res.sendFile(__dirname + '/contacts.html')
 }));
+
 
 
 
