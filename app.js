@@ -125,14 +125,10 @@ app.post('/api/login', async (req, res) => {
 })
 
 
-app.use(express.static(__dirname + '/image'));
-app.use(express.static(__dirname + '/css'));
+app.use(express.static(__dirname + '/public/image'));
+app.use(express.static(__dirname + '/public/css'));
 app.get('/', ((req, res) => {
     res.render('main')
-}));
-
-app.get('/intel', ((req, res) => {
-    res.sendFile(__dirname + '/intel.html')
 }));
 
 app.get('/filter', ((req, res) => {
@@ -147,14 +143,8 @@ app.get('/login', ((req, res) => {
     res.sendFile(__dirname + '/login.html')
 }));
 
-app.get('/nvidia', ((req, res) => {
-    res.sendFile(__dirname + '/nvidia.html')
-}));
 app.get('/contacts', ((req, res) => {
     res.sendFile(__dirname + '/contacts.html')
-}));
-app.get('/amd', ((req, res) => {
-    res.sendFile(__dirname + '/amd.html')
 }));
 
 
